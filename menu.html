@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our authentic Lebanese menu featuring traditional appetizers, grills, vegetarian options, and desserts. Fresh ingredients and family recipes since 1985.">
+    <meta name="keywords" content="Lebanese menu, hummus, shawarma, kebab, tabbouleh, falafel, baklava, Lebanese food prices">
+    <meta name="author" content="Cedar Valley Lebanese Restaurant">
+    <meta property="og:title" content="Menu - Cedar Valley Lebanese Restaurant">
+    <meta property="og:description" content="Discover our extensive menu of authentic Lebanese dishes made with fresh ingredients and traditional recipes.">
+    <title>Menu - Cedar Valley Lebanese Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Cedar Valley</h2>
+                <span>Lebanese Restaurant</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link active">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About & Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <header class="menu-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Authentic Lebanese cuisine crafted with love and tradition</p>
+        </div>
+    </header>
+
+    <!-- Menu Categories -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                <button class="filter-btn" data-category="salads">Salads</button>
+                <button class="filter-btn" data-category="grills">Grills & Mains</button>
+                <button class="filter-btn" data-category="vegetarian">Vegetarian</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Appetizers -->
+            <div class="menu-category" data-category="appetizers">
+                <h2>Appetizers & Mezze</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1621510456681-2330135e5871?w=120&h=120&fit=crop&crop=center" alt="Classic Hummus" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Classic Hummus</h3>
+                                <span class="price">$12.99</span>
+                            </div>
+                            <p>Creamy chickpea puree blended with tahini, lemon juice, and olive oil. Served with warm pita bread.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag popular">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1621510456681-2330135e5871?w=120&h=120&fit=crop&crop=center" alt="Baba Ganoush" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Baba Ganoush</h3>
+                                <span class="price">$13.99</span>
+                            </div>
+                            <p>Smoky roasted eggplant dip with tahini, garlic, and pomegranate seeds. Served with fresh vegetables.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=120&h=120&fit=crop&crop=center" alt="Kibbeh" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Kibbeh (4 pieces)</h3>
+                                <span class="price">$16.99</span>
+                            </div>
+                            <p>Traditional fried bulgur and meat croquettes stuffed with seasoned ground beef and pine nuts.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag signature">Signature</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="appetizers">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1628191079827-dd96ba5c4c6a?w=120&h=120&fit=crop&crop=center" alt="Labneh" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Labneh</h3>
+                                <span class="price">$11.99</span>
+                            </div>
+                            <p>Thick, creamy strained yogurt drizzled with olive oil and served with olives and fresh herbs.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salads -->
+            <div class="menu-category" data-category="salads">
+                <h2>Fresh Salads</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="salads">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=120&h=120&fit=crop&crop=center" alt="Fresh Tabbouleh" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Tabbouleh</h3>
+                                <span class="price">$14.99</span>
+                            </div>
+                            <p>Fresh parsley salad with tomatoes, mint, onions, bulgur, lemon juice, and olive oil.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag fresh">Fresh</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="salads">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=120&h=120&fit=crop&crop=center" alt="Fattoush Salad" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Fattoush</h3>
+                                <span class="price">$15.99</span>
+                            </div>
+                            <p>Mixed greens with tomatoes, cucumbers, radishes, and crispy pita chips in sumac dressing.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag popular">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="salads">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1567306301408-9b74779a11af?w=120&h=120&fit=crop&crop=center" alt="Lebanese Village Salad" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Lebanese Village Salad</h3>
+                                <span class="price">$13.99</span>
+                            </div>
+                            <p>Diced tomatoes, cucumbers, onions, and parsley dressed with lemon and olive oil.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag light">Light</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grills & Mains -->
+            <div class="menu-category" data-category="grills">
+                <h2>Grills & Main Dishes</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="grills">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=120&h=120&fit=crop&crop=center" alt="Chicken Shawarma Platter" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Chicken Shawarma Platter</h3>
+                                <span class="price">$18.99</span>
+                            </div>
+                            <p>Marinated chicken cooked on vertical rotisserie, served with rice, vegetables, and garlic sauce.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag popular">Popular</span>
+                                <span class="tag signature">Signature</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="grills">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=120&h=120&fit=crop&crop=center" alt="Mixed Grill Kebabs" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Mixed Grill</h3>
+                                <span class="price">$24.99</span>
+                            </div>
+                            <p>Lamb, chicken, and beef kebabs grilled to perfection, served with rice and grilled vegetables.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag signature">Signature</span>
+                                <span class="tag chef-special">Chef's Special</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="grills">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=120&h=120&fit=crop&crop=center" alt="Lamb Ouzi" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Lamb Ouzi</h3>
+                                <span class="price">$26.99</span>
+                            </div>
+                            <p>Slow-cooked lamb shoulder with spiced rice, almonds, and raisins, served with yogurt sauce.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag chef-special">Chef's Special</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="grills">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=120&h=120&fit=crop&crop=center" alt="Grilled Salmon" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Grilled Salmon</h3>
+                                <span class="price">$22.99</span>
+                            </div>
+                            <p>Fresh Atlantic salmon grilled with Lebanese spices, served with rice and seasonal vegetables.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag healthy">Healthy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vegetarian -->
+            <div class="menu-category" data-category="vegetarian">
+                <h2>Vegetarian Specialties</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="vegetarian">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=120&h=120&fit=crop&crop=center" alt="Falafel Platter" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Falafel Platter</h3>
+                                <span class="price">$16.99</span>
+                            </div>
+                            <p>Crispy chickpea fritters served with hummus, tahini sauce, and fresh vegetables.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag popular">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="vegetarian">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1621510456681-2330135e5871?w=120&h=120&fit=crop&crop=center" alt="Stuffed Eggplant" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Stuffed Eggplant</h3>
+                                <span class="price">$17.99</span>
+                            </div>
+                            <p>Baby eggplants stuffed with rice, herbs, and vegetables in a rich tomato sauce.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag traditional">Traditional</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="vegetarian">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1585307269465-bf4c31c0d10a?w=120&h=120&fit=crop&crop=center" alt="Mujadara" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Mujadara</h3>
+                                <span class="price">$15.99</span>
+                            </div>
+                            <p>Lentils and rice topped with caramelized onions, served with yogurt and pickles.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                                <span class="tag comfort">Comfort Food</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category" data-category="desserts">
+                <h2>Traditional Desserts</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="desserts">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=120&h=120&fit=crop&crop=center" alt="Baklava" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Baklava (3 pieces)</h3>
+                                <span class="price">$8.99</span>
+                            </div>
+                            <p>Layers of phyllo pastry filled with nuts and sweetened with honey syrup.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag signature">Signature</span>
+                                <span class="tag sweet">Sweet</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=120&h=120&fit=crop&crop=center" alt="Muhallabia" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Muhallabia</h3>
+                                <span class="price">$6.99</span>
+                            </div>
+                            <p>Creamy milk pudding topped with pistachios and rose water syrup.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag traditional">Traditional</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="desserts">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=120&h=120&fit=crop&crop=center" alt="Knafeh" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Knafeh</h3>
+                                <span class="price">$9.99</span>
+                            </div>
+                            <p>Sweet cheese pastry topped with crispy shredded phyllo and orange blossom syrup.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag chef-special">Chef's Special</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="menu-category" data-category="beverages">
+                <h2>Beverages</h2>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="beverages">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1545665277-5937750d6e0b?w=120&h=120&fit=crop&crop=center" alt="Arabic Coffee" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Arabic Coffee</h3>
+                                <span class="price">$4.99</span>
+                            </div>
+                            <p>Traditional Lebanese coffee served with cardamom and a side of dates.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag traditional">Traditional</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=120&h=120&fit=crop&crop=center" alt="Fresh Mint Lemonade" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Fresh Mint Lemonade</h3>
+                                <span class="price">$5.99</span>
+                            </div>
+                            <p>Refreshing blend of fresh lemon juice, mint, and sparkling water.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag fresh">Fresh</span>
+                                <span class="tag popular">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?w=120&h=120&fit=crop&crop=center" alt="Rose Water Tea" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Rose Water Tea</h3>
+                                <span class="price">$4.99</span>
+                            </div>
+                            <p>Aromatic black tea infused with rose water and served with sugar cubes.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag aromatic">Aromatic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="beverages">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1571104508999-893933ded431?w=120&h=120&fit=crop&crop=center" alt="Ayran" loading="lazy">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3>Ayran</h3>
+                                <span class="price">$3.99</span>
+                            </div>
+                            <p>Refreshing yogurt drink with a pinch of salt and dried mint.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag traditional">Traditional</span>
+                                <span class="tag refreshing">Refreshing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Footer CTA -->
+    <section class="menu-cta">
+        <div class="container">
+            <h2>Ready to Order?</h2>
+            <p>Call us to place your order or make a reservation</p>
+            <div class="cta-buttons">
+                <a href="tel:+1234567890" class="btn btn-primary">Call to Order</a>
+                <a href="about.html" class="btn btn-secondary">Visit Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Cedar Valley</h3>
+                    <p>Authentic Lebanese cuisine in the heart of the city</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Thursday: 11AM - 9PM</p>
+                    <p>Friday - Saturday: 11AM - 10PM</p>
+                    <p>Sunday: 12PM - 8PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📞 (555) 123-4567</p>
+                    <p>📧 info@cedarvalley.com</p>
+                    <p>📍 123 Main Street, City, State 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cedar Valley Lebanese Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

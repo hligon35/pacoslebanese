@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Test - Paco's Lebanese Restaurant</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-image { 
+            margin: 10px; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            display: inline-block;
+            text-align: center;
+            width: 200px;
+        }
+        .test-image img { 
+            width: 150px; 
+            height: 100px; 
+            object-fit: cover; 
+            border: 1px solid #ddd;
+        }
+        .working { border-color: green; }
+        .broken { border-color: red; }
+    </style>
+</head>
+<body>
+    <h1>Image Test Page</h1>
+    <p>Testing all Unsplash images used in the website:</p>
+
+    <div class="test-image">
+        <h3>Hero Image</h3>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop&crop=center" alt="Hero" onerror="this.parentNode.className+=' broken'" onload="this.parentNode.className+=' working'">
+    </div>
+
+    <div class="test-image">
+        <h3>Shawarma</h3>
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop&crop=center" alt="Shawarma" onerror="this.parentNode.className+=' broken'" onload="this.parentNode.className+=' working'">
+    </div>
+
+    <div class="test-image">
+        <h3>Hummus</h3>
+        <img src="https://images.unsplash.com/photo-1621510456681-2330135e5871?w=400&h=300&fit=crop&crop=center" alt="Hummus" onerror="this.parentNode.className+=' broken'" onload="this.parentNode.className+=' working'">
+    </div>
+
+    <div class="test-image">
+        <h3>Mixed Grill</h3>
+        <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&h=300&fit=crop&crop=center" alt="Mixed Grill" onerror="this.parentNode.className+=' broken'" onload="this.parentNode.className+=' working'">
+    </div>
+
+    <div class="test-image">
+        <h3>Falafel</h3>
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=120&h=120&fit=crop&crop=center" alt="Falafel" onerror="this.parentNode.className+=' broken'" onload="this.parentNode.className+=' working'">
+    </div>
+
+    <div class="test-image">
+        <h3>Baklava</h3>
+        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=120&h=120&fit=crop&crop=center" alt="Baklava" onerror="this.parentNode.className+=' broken'" onload="this.parentNode.className+=' working'">
+    </div>
+
+    <h2>Alternative Approach - Using Placeholder Service</h2>
+    <p>If Unsplash images continue to have issues, here are some alternatives:</p>
+    
+    <div class="test-image">
+        <h3>Food Placeholder 1</h3>
+        <img src="https://picsum.photos/400/300?random=1" alt="Random Food" onerror="this.parentNode.className+=' broken'" onload="this.parentNode.className+=' working'">
+    </div>
+
+    <div class="test-image">
+        <h3>Food Placeholder 2</h3>
+        <img src="https://picsum.photos/400/300?random=2" alt="Random Food" onerror="this.parentNode.className+=' broken'" onload="this.parentNode.className+=' working'">
+    </div>
+
+    <script>
+        // Check for broken images after page load
+        window.onload = function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.onerror = function() {
+                    this.style.display = 'none';
+                    this.parentNode.innerHTML += '<div style="background: #f0f0f0; padding: 20px; text-align: center; border: 2px dashed #ccc;">Image failed to load</div>';
+                };
+            });
+        };
+    </script>
+</body>
+</html>
