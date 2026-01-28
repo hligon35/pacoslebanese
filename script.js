@@ -410,4 +410,4 @@ function lazyLoadImages() {
 // Initialize lazy loading
 document.addEventListener('DOMContentLoaded', lazyLoadImages);
 
-console.log('Cedar Valley Lebanese Restaurant - Website Loaded Successfully! 🏠🌿');
+console.log('Paco's Lebanese Restaurant - Website Loaded Successfully! 🏠🌿');

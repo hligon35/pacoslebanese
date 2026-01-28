@@ -1,4 +1,4 @@
-# Cedar Valley Lebanese Restaurant Website
+# Paco's Lebanese Restaurant Website
 
 A modern, SEO-optimized website for a Lebanese restaurant featuring authentic cuisine and warm hospitality.
 
@@ -42,7 +42,7 @@ A modern, SEO-optimized website for a Lebanese restaurant featuring authentic cu
 ## 📂 File Structure
 
 ```
-Cedar Valley Lebanese Restaurant/
+Paco's Lebanese Restaurant/
 ├── index.html          # Home page
 ├── menu.html           # Interactive menu page
 ├── about.html          # About & contact page
