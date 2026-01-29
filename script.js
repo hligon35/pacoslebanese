@@ -406,4 +406,4 @@ function lazyLoadImages() {
 // Initialize lazy loading
 document.addEventListener('DOMContentLoaded', lazyLoadImages);
 
-console.log('Paco\'s Lebanese Restaurant - Website Loaded Successfully!');
+console.log('Cedar & Gold\'s Lebanese Restaurant - Website Loaded Successfully!');
