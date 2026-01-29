@@ -16,56 +16,52 @@ if (hamburger && navMenu) {
 }
 
 // Menu Filtering System
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const menuItems = document.querySelectorAll('.menu-item');
-    const menuCategories = document.querySelectorAll('.menu-category');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const menuItems = document.querySelectorAll('.menu-item');
 
-    if (filterButtons.length > 0) {
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                // Add active class to clicked button
-                button.classList.add('active');
+if (filterButtons.length > 0) {
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
 
-                const filterValue = button.getAttribute('data-category');
+            const filterValue = button.getAttribute('data-category');
 
-                // Show/hide menu items with animation
-                menuItems.forEach(item => {
-                    const itemCategory = item.getAttribute('data-category');
-                    
-                    if (filterValue === 'all' || itemCategory === filterValue) {
-                        item.style.display = 'flex';
-                        item.classList.remove('filtered');
-                        // Add animation
-                        setTimeout(() => {
-                            item.style.opacity = '1';
-                            item.style.transform = 'translateY(0)';
-                        }, 100);
-                    } else {
-                        item.style.opacity = '0';
-                        item.style.transform = 'translateY(20px)';
-                        setTimeout(() => {
-                            item.style.display = 'none';
-                            item.classList.add('filtered');
-                        }, 300);
-                    }
-                });
-
-                // Show/hide category headers
-                menuCategories.forEach(category => {
-                    const categoryName = category.getAttribute('data-category');
-                    if (filterValue === 'all' || categoryName === filterValue) {
-                        category.style.display = 'block';
-                    } else {
-                        category.style.display = 'none';
-                    }
-                });
+            // Show/hide menu items
+            menuItems.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                
+                if (filterValue === 'all' || itemCategory === filterValue) {
+                    item.style.display = 'flex';
+                    item.classList.remove('filtered');
+                } else {
+                    item.style.display = 'none';
+                    item.classList.add('filtered');
+                }
             });
+
+            // Scroll to the matching section
+            if (filterValue === 'all') {
+                // Scroll to top
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                const targetSection = document.getElementById(filterValue);
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 175;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
         });
-    }
-});
+    });
+}
 
 // Smooth Scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -410,4 +406,4 @@ function lazyLoadImages() {
 // Initialize lazy loading
 document.addEventListener('DOMContentLoaded', lazyLoadImages);
 
-console.log('Paco's Lebanese Restaurant - Website Loaded Successfully! 🏠🌿');
+console.log('Paco\'s Lebanese Restaurant - Website Loaded Successfully!');
