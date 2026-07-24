@@ -16,8 +16,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <style>
+        /* Homepage-only responsive content gutters */
+        .home-page .hero {
+            padding-left: clamp(24px, 6vw, 96px);
+            padding-right: clamp(24px, 6vw, 96px);
+        }
+
+        .home-page section > .container,
+        .home-page .footer > .container {
+            padding-left: clamp(24px, 5vw, 64px);
+            padding-right: clamp(24px, 5vw, 64px);
+        }
+
+        @media (max-width: 768px) {
+            .home-page .hero,
+            .home-page section > .container,
+            .home-page .footer > .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
 </head>
-<body>
+<body class="home-page">
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
